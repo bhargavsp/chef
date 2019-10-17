@@ -5,12 +5,9 @@
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
 
-mypack= 'apache2'
 
-package mypack do
+node['mycb']['multipack'].each do |looppack|
+package looppack do
     action :install
 end
-
-service mypack do
-    action :start
 end
