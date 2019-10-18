@@ -8,3 +8,5 @@ if node['platform'] == "amazon"
 end
 
 default['mycb']['multipack'] = ['git','wget','tree']
+
+default['java']['jdk_version'] = '8'
